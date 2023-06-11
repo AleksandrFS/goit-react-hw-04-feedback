@@ -15,7 +15,7 @@ export const App = () => {
     const name = e.target.name;
     switch (name) {
       case 'good':
-        setGood(good + 1);
+        setGood(prevState => prevState + 1);
         break;
       case 'neutral':
         setNeutral(prevState => prevState + 1);
